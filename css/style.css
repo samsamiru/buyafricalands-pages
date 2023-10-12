@@ -1,0 +1,550 @@
+@font-face{
+  font-family: WorkSans;
+  src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+  font-weight: 700;
+}
+@font-face{
+  font-family: lato;
+  src: url(../fonts/lato/Lato-Regular.ttf);
+  font-weight:500;
+}
+
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+body{
+    background-image: url(../images/background-img.png);
+    background-color: #59B37F;
+    background-size: cover;
+    background-position: center;
+}
+.d-flex{
+    display: flex;
+}
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.logo {
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+    max-height: 150px;
+}
+.navbar{
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: auto;
+    padding-top: 40px;
+}
+.menu-bar-btn {
+    width: 35px;
+    height: 5px;
+    display: block;
+    background: #fff;
+    margin-bottom: 5px;
+}
+.navigation {
+    width: 100%;
+    max-width: 152px;
+    margin-left: auto;
+    display: none;
+}
+.navigation ul li {
+    list-style: none;
+    padding: 5px 0;
+}
+.navigation ul li:first-child {
+    padding: 0;
+}
+.navigation ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'lato';
+}
+.banner-sec {
+    padding: 80px 0;
+}
+.banner-sec .d-flex {
+    justify-content: space-between;
+}
+.banner-content h1{
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; 
+}
+.banner-content p {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 25px 0 20px 0;
+}
+.banner-content h3{
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px; 
+}
+.banner-content ul li{
+    color: #FFF;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    list-style: none;
+}
+.banner-content, .banner-img {
+    width: 50%;
+}
+.banner-img {
+    text-align: right;
+    padding-left: 50px;
+}
+.how-it-works {
+    padding-bottom: 80px;
+}
+.how-it-works h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+.how-it-works .d-flex{
+    flex-wrap: wrap;
+    padding: 60px 0;
+}
+.how-it-works-items {
+    box-shadow: 0px 0px 4px 0px rgba(204, 204, 204, 0.25);
+    width: 48%;
+    padding: 35px;
+    margin: 0 20px 20px 0;
+    border-radius: 10px;
+    background: #6AB088;
+}
+.how-it-works-items:nth-child(2), .how-it-works-items:nth-child(4), .how-it-works-items:nth-child(6) {
+    margin-right: 0;
+}
+.how-it-works-items h4{
+    color: #FFF;
+    font-family: Lato;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100px;
+    text-align: center;
+}
+.how-it-works-items h3{
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; 
+    margin: 25px 0;
+}
+.how-it-works-items p{
+    color: #FFF;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.how-it-works .paragraph {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'lato';
+}
+.copyright {
+    border-top: 1px solid #fff;
+}
+.copyright p {
+    text-align: center;
+    margin: 50px 0 80px 0;
+    font-size: 20px;
+    font-family: 'lato';
+    font-weight: 400;
+    color: #fff;
+}
+.affiliate-groups-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 40px;
+}
+.affiliate-groups {
+    padding-bottom: 40px;
+}
+.affiliate-groups-content, .affiliate-groups-image {
+    width: 50%;
+}
+.affiliate-groups-content h2 {
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+.affiliate-groups-content p {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 25px;
+}
+.banner-content-sec {
+    width: 100%;
+}
+.login-form-sec h2 {
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+}
+.login-form-sec h3 {
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+    margin: 25px 0;
+}
+.login-form-sec p {
+    color: #FFF;
+    font-family: 'lato';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+.login-form {
+    border-radius: 10px;
+    background: #FFF;
+    padding: 70px 50px;
+    margin: 50px 0;
+}
+.login-form label, .login-form select {
+    display: block;
+    color: #6D6D6D;
+    font-family: 'lato';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding: 0 20px;
+}
+.input-field p {
+    text-align: left;
+    padding: 0 20px;
+}
+.login-form input, .login-form select {
+    border-radius: 10px;
+    background: #F5F5F5;
+    height: 50px;
+    width: 100%;
+    max-width: 550px;
+    margin-top: 10px;
+    border: none;
+    padding: 0 20px;
+}
+.login-form input:focus, .login-form select:focus {
+    border: none;
+    outline: none;
+}
+
+.login-form p {
+    width: 50%;
+}
+.input-field {
+    padding-bottom: 40px;
+}
+.sumbit-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+.sumbit-btn button {
+    border-radius: 10px;
+    background: #59B37F;
+    width: 100%;
+    max-width: 550px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'lato';
+    font-weight: 400;
+    color: #fff;
+    border: 2px solid #59B37F;
+    transition: ease-in-out .5s;
+}
+.sumbit-btn button:hover{
+    background: #fff;
+    color:#59B37F;;
+}
+.earn-long-term h2 {
+    color: #F5F5F5;
+    font-family: Work Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+.earn-long-term p {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 25px 0 50px 0;
+}
+.mobile-view-affiliate-groups{
+    display: none;
+}
+.affiliate-groups-desktop {
+    display: block;
+}
+@media (max-width: 1400px){
+    .container{
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+@media (max-width: 1200px){
+    .login-form label, .login-form select {
+    padding:0;
+    min-height: 48px;
+}
+}
+@media (max-width: 991px){
+    .banner-sec {
+        padding: 60px 0;
+    }   
+    .how-it-works .d-flex {
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+.how-it-works-items h4 {
+    font-size: 60px;
+    line-height: 60px;
+}
+.how-it-works-items h3 {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 15px 0;
+}
+.how-it-works-items p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.banner-content h1 {
+    font-size: 22px;
+    line-height: 32px;
+}
+.how-it-works {
+    padding-bottom: 60px;
+}
+.copyright p {
+    text-align: center;
+    margin: 40px 0 60px 0;
+    font-size: 20px;
+    font-family: 'lato';
+    font-weight: 400;
+    color: #fff;
+}
+.affiliate-groups-content, .affiliate-groups-image {
+    width: 46%;
+}
+.affiliate-groups-content p {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 15px;
+}
+.login-form {
+    padding: 40px 25px;
+    margin: 50px 0;
+}
+}
+@media (max-width: 767px){
+    .how-it-works .d-flex, .banner-sec .d-flex {
+    display: block;
+}
+.how-it-works-items {
+     width: 100%;
+    margin: 0 0 20px 0;
+     
+}
+.banner-content, .banner-img {
+    width: 100%;
+}
+.banner-img {
+    margin-top: 40px;
+    padding: 0;
+}
+.navbar {
+    width: 100%;
+    padding-top: 20px;
+}
+.banner-sec {
+    padding: 40px 0;
+}
+.how-it-works .d-flex {
+    padding: 20px 0;
+}
+.how-it-works {
+    padding-bottom: 40px;
+}
+.copyright p {
+    margin: 30px 0 40px 0;
+}
+.banner-content h1 {
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+.banner-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 15px 0 15px 0;
+}
+.banner-content ul li { 
+    font-size: 16px;
+    line-height: 26px;
+}
+.banner-content h3 {
+    font-size: 18px;
+    line-height: 28px;
+}
+.how-it-works-items {
+    padding: 20px 15px;
+}
+.how-it-works-items h4 {
+    font-size: 50px;
+    line-height: 50px;
+}
+.how-it-works-items h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 15px 0;
+}
+.how-it-works-items p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.how-it-works .paragraph {
+    font-size: 16px;
+}
+.copyright p {
+    font-size: 16px;
+}
+.affiliate-groups-content, .affiliate-groups-image {
+    width: 100%;
+}
+.affiliate-groups-items {
+    display: block;
+    margin: 0 0 40px;
+}
+.affiliate-groups-content h2 {
+    font-size: 20px;
+    line-height: 30px;
+}
+.affiliate-groups-content p {
+    margin-top: 5px;
+}
+.affiliate-groups-content {
+    margin-top: 20px ;
+}
+.input-field p {
+    padding: 15px 0;
+}
+.login-form .d-flex {
+    display: block;
+}
+.login-form p {
+    width: 100%;
+}
+.login-form {
+    padding: 20px;
+    margin: 40px 0;
+}
+.input-field {
+    padding-bottom: 0;
+}
+.login-form input, .login-form select {
+    max-width: 100%;
+}
+.earn-long-term h2 {
+    font-size: 20px;
+    line-height: 26px;
+}
+.earn-long-term p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 15px 0 40px 0;
+}
+.login-form-sec h2 {
+    font-size: 20px;
+    line-height: 30px;
+}
+.login-form-sec h3 {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 15px 0;
+}
+.login-form-sec p {
+    font-size: 16px;
+    line-height: 26px;
+}
+.affiliate-groups-desktop{
+    display: none;
+}
+.mobile-view-affiliate-groups{
+    display: block;
+}
+@media (max-width: 575px){
+    .input-field p {
+        padding: 10px 0;
+    }
+}
